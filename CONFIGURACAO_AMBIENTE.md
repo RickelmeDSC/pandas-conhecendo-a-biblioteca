@@ -5,6 +5,19 @@
 
 ---
 
+## 💻 Máquinas deste projeto
+
+Trabalho em **duas máquinas Windows** com versões diferentes de Python. Use sempre a versão da máquina onde você está — não fixe uma só.
+
+| Máquina | Python | Nome do kernel | Display no VS Code |
+|---------|--------|----------------|--------------------|
+| 🏠 Casa | 3.13 | `python313-dados` | "Python 3.13 (Dados)" |
+| 💼 Trabalho | 3.14 | `python314-dados` | "Python 3.14 (Dados)" |
+
+> Sempre que registrar o kernel, troque `3XX` pela versão real da máquina (descubra com `py --version`).
+
+---
+
 ## 🎯 Resumo do que precisa estar funcionando
 
 Para um notebook `.ipynb` rodar Pandas no VS Code, **um único Python** precisa ter as duas coisas:
@@ -32,16 +45,21 @@ py -m pip install --user pandas ipykernel
 > Convenção do projeto: sempre instalar com `py -m pip install --user [pacote]`.
 
 ### 3. Registrar o kernel com nome amigável
+Use a versão da **sua** máquina (veja a tabela no topo). Exemplos:
 ```powershell
+# Casa (Python 3.13)
 py -m ipykernel install --user --name=python313-dados --display-name "Python 3.13 (Dados)"
+
+# Trabalho (Python 3.14)
+py -m ipykernel install --user --name=python314-dados --display-name "Python 3.14 (Dados)"
 ```
-Isso faz aparecer um kernel chamado **"Python 3.13 (Dados)"** na lista do VS Code.
+Isso faz aparecer um kernel **"Python 3.XX (Dados)"** na lista do VS Code.
 
 ### 4. No VS Code
 1. Instale a extensão **Jupyter** (e a **Python**), da Microsoft.
 2. Abra o notebook `.ipynb`.
 3. `Ctrl + Shift + P` → **"Reload Window"** (para o VS Code enxergar o kernel novo).
-4. Clique no **seletor de kernel** (canto superior direito) → escolha **"Python 3.13 (Dados)"**.
+4. Clique no **seletor de kernel** (canto superior direito) → escolha **"Python 3.XX (Dados)"** da sua máquina.
 5. Rode as células de cima para baixo.
 
 ---
@@ -70,8 +88,9 @@ py -0p
 
 ### Listar os kernels registrados
 ```powershell
-py -m jupyter kernelspec list
+py -m jupyter_client.kernelspecapp list
 ```
+> ⚠️ O comando `py -m jupyter kernelspec list` pode falhar (aconteceu na máquina do trabalho, Python 3.14). O comando acima é o que funciona nas duas.
 
 ---
 
