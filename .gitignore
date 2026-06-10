@@ -21,6 +21,7 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
-# Dados grandes / temporários (descomente se baixar datasets pesados)
-# *.csv
-# data/
+# Dados gerados pelos notebooks (derivados — qualquer um regenera rodando o notebook)
+dados/*.csv
+# mas mantém a pasta no repositório
+!dados/.gitkeep
