@@ -34,8 +34,9 @@ pandas-conhecendo-a-biblioteca/
 2. Abra o `notebooks/notebook_inicial.ipynb` no VS Code.
 3. Selecione o kernel **"Python 3.XX (Dados)"** e execute as células de cima para baixo.
 
-> ⚠️ Os caminhos de arquivo (ex: `dados/dados_apartamentos.csv`) são relativos à **raiz do projeto**,
-> que é o diretório padrão de execução de notebooks no VS Code. Abra a pasta do projeto na raiz.
+> ⚠️ No VS Code, o notebook executa a partir da **própria pasta** (`notebooks/`). Por isso os caminhos
+> de arquivo sobem um nível com `../`, ex: `pd.read_csv('../dados/alunos.csv')`. Rode as células de
+> cima para baixo para garantir que imports e variáveis existam.
 
 ## 🛠️ Stack
 
