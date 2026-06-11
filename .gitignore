@@ -25,3 +25,5 @@ desktop.ini
 dados/*.csv
 # mas mantém a pasta no repositório
 !dados/.gitkeep
+# ...e versiona as FONTES de entrada (não são geradas por código)
+!dados/alunos.csv
