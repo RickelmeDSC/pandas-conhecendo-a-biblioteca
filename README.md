@@ -14,6 +14,9 @@ A análise parte de uma base com **32.960 imóveis** e percorre o fluxo completo
 - **Tratamento de nulos** — `isnull`, `fillna` e remoção de registros inválidos
 - **Filtros** — seleção por múltiplas condições com máscaras booleanas
 - **Exportação** — salvando o resultado tratado com `to_csv`
+- **Manipulação** — criação de colunas numéricas (cálculo), categóricas (concatenação) e booleanas (comparação), além de `replace` e `apply`
+
+Além da aula principal, o `notebook_desafios.ipynb` resolve **todos os desafios** propostos: análises da base de aluguel (média de quartos, bairros únicos, ranking de preço) e dois desafios de tratamento com a base de alunos (`alunos.csv`) — limpeza de nulos, remoção de registros, filtros, exportação e engenharia de colunas (pontos extras, nota final, aprovação).
 
 ## 📁 Estrutura do projeto
 
@@ -22,10 +25,12 @@ pandas-conhecendo-a-biblioteca/
 ├── README.md                    ← você está aqui
 ├── CONFIGURACAO_AMBIENTE.md     ← como rodar o projeto do zero
 ├── notebooks/
-│   ├── notebook_inicial.ipynb   ← aula principal (ETL + análise)
-│   └── notebook_desafios.ipynb  ← desafios extras de análise por bairro
+│   ├── notebook_inicial.ipynb   ← aula principal (ETL + análise + manipulação)
+│   └── notebook_desafios.ipynb  ← todos os desafios resolvidos (aluguel + alunos)
 └── dados/
-    └── dados_apartamentos.csv   ← saída gerada pelo notebook (não versionada)
+    ├── alunos.csv               ← fonte de entrada dos desafios (versionada)
+    ├── dados_apartamentos.csv   ← saída gerada pelo notebook (não versionada)
+    └── alunos_aprovados.csv     ← saída gerada pelo notebook (não versionada)
 ```
 
 ## 🚀 Como rodar
@@ -46,6 +51,7 @@ pandas-conhecendo-a-biblioteca/
 
 ## 📊 Dados
 
-Base pública de aluguel disponibilizada pela [Alura](https://github.com/alura-cursos/pandas-conhecendo-a-biblioteca),
-carregada diretamente da URL dentro do notebook. O arquivo em `dados/` é um **resultado derivado**
-(apartamentos tratados) — basta rodar o notebook para regerá-lo.
+Bases públicas disponibilizadas pela [Alura](https://github.com/alura-cursos/pandas-conhecendo-a-biblioteca):
+a de **aluguel** é carregada direto da URL no notebook; a de **alunos** (`alunos.csv`) é versionada em `dados/`
+por ser uma fonte de entrada. Os demais arquivos `.csv` em `dados/` são **resultados derivados** — basta
+rodar o notebook para regerá-los, por isso não vão para o repositório.

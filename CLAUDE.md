@@ -36,13 +36,15 @@ Rickelme David (RickelmeDSC). Backend Developer (Node.js, NestJS, PostgreSQL) em
 
 ## Onde estou agora
 
-🚀 **Iniciando Fase 2 — Semana 4**
+✅ **Semana 4 concluída — Pandas avançado**
 
-Próximo passo imediato: **Pandas — conhecendo a biblioteca** (Alura, Nível 1, módulo 14)
+Curso **Pandas — conhecendo a biblioteca** finalizado, com o notebook de ETL publicado no GitHub (`pandas-conhecendo-a-biblioteca`). Cobriu o fluxo completo: exploração, análise por tipo/bairro, remoção de comerciais, tratamento de nulos, filtros, exportação e criação de colunas (numéricas, categóricas e booleanas). Todos os desafios da aula resolvidos em notebook separado.
+
+🚀 **Próximo passo imediato:** Semana 5 — **SQL avançado** (Joins, Views, transações).
 
 ## Roadmap da Fase 2 (Semanas 4–7)
 
-### Semana 4 — Pandas avançado
+### ✅ Semana 4 — Pandas avançado (CONCLUÍDA)
 **Foco:** Solidificar Pandas após o "aprender no susto" do projeto PNAD.
 
 | Dia | Curso/Tópico | Entregável |
@@ -54,7 +56,7 @@ Próximo passo imediato: **Pandas — conhecendo a biblioteca** (Alura, Nível 1
 | Sex | Pandas — selecionando e agrupando | loc, iloc, groupby profundo |
 | Sáb | Pandas — limpeza e tratamento | nulos, duplicatas, normalização |
 
-**Entregável:** Notebook de ETL profissional sobre dataset real (público no GitHub).
+**Entregável:** ✅ Notebook de ETL profissional sobre dataset real (público no GitHub) — **entregue**.
 
 ### Semana 5 — SQL avançado
 **Foco:** SQL além do básico. Joins são cobrados em 100% das entrevistas técnicas.
