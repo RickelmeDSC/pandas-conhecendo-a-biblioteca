@@ -1,5 +1,11 @@
 # 🐼 Pandas — Conhecendo a Biblioteca
 
+![Python](https://img.shields.io/badge/Python-3.13%20%7C%203.14-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-gr%C3%A1ficos-11557C?logo=plotly&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-notebook-F37626?logo=jupyter&logoColor=white)
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-success)
+
 Projeto de estudo da **Semana 4 (Fase 2)** da minha jornada de transição para Análise de Dados.
 O foco é solidificar o Pandas — da leitura de dados à limpeza, filtragem e exportação — usando uma
 base real de imóveis para aluguel no Rio de Janeiro.
